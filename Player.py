@@ -10,14 +10,6 @@ class Player:
         self.playernum = playernum
         self.name = namelist
         
-        self.mapList={}
-        for i in range(10):
-            for j in range(10):
-                self.mapList[i*10+j+1] = [20+60*j,560-60*i] 
-
-        self.UpAndDownDir = {3: 51, 6: 27, 20: 70, 36: 55, 63: 95, 68: 98, 25: 5, 34: 1, 47: 19, 65: 52,
-                                       87: 57, 91: 61, 99: 69}
-
     def addscore(self, DiceNumber):
         if self.totalscore+DiceNumber <= 100:
             self.totalscore += DiceNumber
